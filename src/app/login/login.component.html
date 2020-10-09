@@ -1,1 +1,53 @@
-<p>login works!</p>
+<div class="login-wrapper">
+        <div class="login-container">
+                <h2 class="header-login">Welcome to DoJoin!</h2>
+                <div class="login-form-wrapper">
+                        <form [formGroup]="loginForm" (ngSubmit)="login()">
+                                <div>
+                                        <mat-form-field class="country-code-field">
+                                                <mat-label>code</mat-label>
+                                                <mat-select [(value)]="country">
+                                                        <mat-option *ngFor="let country of countries "
+                                                                [value]="country.countryCode">
+                                                                {{country.phoneCode}}
+                                                        </mat-option>
+                                                </mat-select>
+                                        </mat-form-field>
+                                        <mat-form-field class="phone-field">
+                                                <mat-label>Phone number</mat-label>
+                                                <input matInput formControlName="phoneFormControl"
+                                                        placeholder="91100001122">
+                                                <mat-icon matSuffix>phone</mat-icon>
+                                        </mat-form-field>
+                                </div>
+                                <div>
+                                        <mat-form-field class="password-field">
+                                                <mat-label>password</mat-label>
+                                                <input type="password" matInput formControlName="passwordFormControl"
+                                                        placeholder="password">
+                                                <mat-icon matSuffix>remove_red_eye</mat-icon>
+                                        </mat-form-field>
+                                </div>
+                                <div>
+                                        <mat-checkbox class="remember-check">Remember me</mat-checkbox>
+                                        <a class="forget-password">Forget Password?</a>
+                                </div>
+                                <div class="sign-btn">
+                                        <button mat-raised-button color="accent">Sign In</button>
+                                </div>
+                        </form>
+                        <div class="sign-with-another-way-btn">
+                                <button mat-stroked-button color="primary">Sign In with Email or Account ID</button>
+                        </div>
+                        <div class="text-wrapper">
+                                <p>or</p>
+                        </div>
+                        <div class="register-link-wrapper">
+                                <p>Don't have an account? </p><a class="register-link">Sign up</a>
+                        </div>
+                        <div class="img-wrapper">
+                                <img src='../../assets/img/7908713.png'>
+                        </div>
+                </div>
+        </div>
+</div>

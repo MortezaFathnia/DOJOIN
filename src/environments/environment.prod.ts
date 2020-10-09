@@ -6,5 +6,6 @@ export const environment = {
   communicationServicesUrl: 'https://communication.mealsyservices.com/api',
   posCompanyServicesUrl: 'https://posdragon.mealsyservices.com/api/Companies',
   posServicesUrl: 'https://posv3.mealsyservicesdevelopment.com/api',
-  onlineOrderingService: 'https://onlineorderingdragon.mealsyservices.com/api/v1'
+  onlineOrderingService: 'https://onlineorderingdragon.mealsyservices.com/api/v1',
+  apiUrl:'http://208.109.13.111:9090/api'
 };

@@ -37,7 +37,7 @@ export class AuthGuard implements CanActivate {
             this.router.navigate(['login']);
             return;
           } else {
-            this.authService.refreshToken();
+            // this.authService.refreshToken();
           }
         }
       } else if (!this.authService.tokenModel.isValid()) {
@@ -45,7 +45,7 @@ export class AuthGuard implements CanActivate {
           this.router.navigate(['login']);
           return;
         } else {
-          this.authService.refreshToken();
+          // this.authService.refreshToken();
         }
       }
     }

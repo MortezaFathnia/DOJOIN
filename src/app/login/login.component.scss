@@ -1,0 +1,78 @@
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.country-code-field {
+  width: 15%;
+  margin-right: 20px;
+}
+.phone-field {
+  width: 79%;
+}
+.login-container {
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.login-form-wrapper {
+  margin: 0 4rem;
+}
+.header-login {
+  margin: 2rem 0 4rem 0;
+}
+.password-field {
+  width: 100%;
+}
+.forget-password {
+  float: right;
+  color: blue;
+}
+.sign-btn {
+  margin: 2rem 0 2rem;
+  button {
+    width: 100%;
+  }
+}
+.sign-with-another-way-btn {
+  margin: 0 0 2rem;
+  button {
+    width: 100%;
+  }
+}
+.text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    &::before,
+    &::after {
+      content: "";
+      display: inline-block;
+      background: #ccc;
+      height: 1px;
+      width: 46%;
+    }
+  }
+}
+.register-link-wrapper {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+}
+.register-link {
+  color: blue;
+}
+.img-wrapper {
+  width: 400px;
+  margin: 2rem 0 3rem;
+  img {
+    width: 100%;
+  }
+}

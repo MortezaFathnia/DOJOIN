@@ -6,5 +6,6 @@ export const environment = {
   communicationServicesUrl: 'http://communication.mealsyservicesdevelopment.com/api',
   posCompanyServicesUrl: 'http://posmergev2.mealsyservicesdevelopment.com/api/Companies',
   posServicesUrl: 'http://posv3.mealsyservicesdevelopment.com/api/v1',
-  onlineOrderingService: 'http://onlineorderingmerge.mealsyservicesdevelopment.com/api/v1'
+  onlineOrderingService: 'http://onlineorderingmerge.mealsyservicesdevelopment.com/api/v1',
+  apiUrl:'http://208.109.13.111:9090/api'
 };

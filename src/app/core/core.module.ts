@@ -10,12 +10,12 @@ import { JwtInterceptor } from './interceptor/jwt.interceptor';
     CommonModule,
     HttpClientModule
   ],
-  providers: [
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: JwtInterceptor,
-      multi: true
-    }
-  ]
+  // providers: [
+  //   {
+  //     provide: HTTP_INTERCEPTORS,
+  //     useClass: JwtInterceptor,
+  //     multi: true
+  //   }
+  // ]
 })
 export class CoreModule { }

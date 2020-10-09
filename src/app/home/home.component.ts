@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {CategoryService} from '../core/services/category.service';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
+  categories;
+  panelOpenState = false;
+  constructor(
+    private categoryService:CategoryService
+  ) { }
 
   ngOnInit(): void {
+    this.categoryService.getCategories().subscribe(
+      res=>console.log(res)
+    );
   }
 
 }

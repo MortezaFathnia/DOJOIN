@@ -22,7 +22,7 @@ export class JwtInterceptor implements HttpInterceptor {
     }
 
     if (!this.inflightAuthRequest) {
-      this.inflightAuthRequest = this.authService.getAccessToken();
+      // this.inflightAuthR equest = this.authService.getAccessToken();
     }
 
     return this.inflightAuthRequest.pipe(
@@ -49,7 +49,7 @@ export class JwtInterceptor implements HttpInterceptor {
               this.inflightAuthRequest = null;
               this.router.navigate(['login']);
             } else {
-              this.inflightAuthRequest = this.authService.refreshToken();
+              // this.inflightAuthRequest = this.authService.refreshToken();
             }
           }
 
