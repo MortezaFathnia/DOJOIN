@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {CategoryService} from '../core/services/category.service';
+import { CategoryService } from '../core/services/category.service';
+
 
 @Component({
   selector: 'app-home',
@@ -10,12 +11,12 @@ export class HomeComponent implements OnInit {
   categories;
   panelOpenState = false;
   constructor(
-    private categoryService:CategoryService
+    private categoryService: CategoryService
   ) { }
 
   ngOnInit(): void {
     this.categoryService.getCategories().subscribe(
-      res=>console.log(res)
+      res => this.categories = res.result
     );
   }
 

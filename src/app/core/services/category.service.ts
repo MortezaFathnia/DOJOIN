@@ -14,7 +14,7 @@ export class CategoryService {
                 private http: HttpClient
         ) { }
         getCategories(): Observable<any> {
-                return this.http.get<any>(`${environment.apiUrl}/Category`);
+                return this.http.get<any>('http://208.109.13.111:9090/api/Category');
         }
 
 }

@@ -1,5 +1,5 @@
-export class CategoryModel {
+export class Category {
         id: string;
         title: string;
-        subCategories: CategoryModel[]
+        subCategories: Category[]
 }
